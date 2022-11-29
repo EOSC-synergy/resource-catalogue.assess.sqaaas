@@ -1,0 +1,60 @@
+config:
+  credentials: []
+  project_repos:
+    github.com/EOSC-synergy/sqaaas-tooling:
+      branch: release/1.7.7
+      repo: https://github.com/EOSC-synergy/sqaaas-tooling
+    github.com/madgeek-arc/resource-catalogue:
+      branch: master
+      repo: https://github.com/madgeek-arc/resource-catalogue
+environment:
+  JPL_DOCKERFORCEBUILD: enabled
+  JPL_KEEPGOING: enabled
+sqa_criteria:
+  QC.Acc:
+    repos:
+      github.com/madgeek-arc/resource-catalogue git:
+        commands:
+        - /usr/bin/env sh .sqa/script.snappy-aqua-baboon.sh
+        container: qc.acc_stealthy-lavender-beetle
+  QC.Doc:
+    repos:
+      github.com/madgeek-arc/resource-catalogue find_doc_files.py:
+        commands:
+        - /usr/bin/env sh .sqa/script.foggy-goldenrod-bee.sh
+        container: qc.doc_pasty-pink-wildebeest
+      github.com/madgeek-arc/resource-catalogue git:
+        commands:
+        - /usr/bin/env sh .sqa/script.slaphappy-bistre-malamute.sh
+        container: qc.doc_craggy-rust-avocet
+      github.com/madgeek-arc/resource-catalogue markdownlint:
+        commands:
+        - /usr/bin/env sh .sqa/script.silly-crimson-bat.sh
+        container: qc.doc_beady-zucchini-hippopotamus
+  QC.Lic:
+    repos:
+      github.com/madgeek-arc/resource-catalogue licensee:
+        commands:
+        - /usr/bin/env sh .sqa/script.leaky-lemon-labradoodle.sh
+        container: qc.lic_craggy-fuchsia-shark
+  QC.Sty:
+    repos:
+      github.com/madgeek-arc/resource-catalogue checkstyle:
+        commands:
+        - /usr/bin/env sh .sqa/script.boozy-tangerine-zebu.sh
+        container: qc.sty_flaky-teal-shrew
+      github.com/madgeek-arc/resource-catalogue hadolint:
+        commands:
+        - /usr/bin/env sh .sqa/script.gamy-sangria-devil.sh
+        container: qc.sty_scanty-ultramarine-dogfish
+      github.com/madgeek-arc/resource-catalogue jsonlint:
+        commands:
+        - /usr/bin/env sh .sqa/script.shabby-cream-spaniel.sh
+        container: qc.sty_cranky-cyan-macaque
+  QC.Ver:
+    repos:
+      github.com/madgeek-arc/resource-catalogue get_git_tags.py:
+        commands:
+        - /usr/bin/env sh .sqa/script.scaly-purple-dachsbracke.sh
+        container: qc.ver_homey-magnolia-swan
+timeout: 1800
