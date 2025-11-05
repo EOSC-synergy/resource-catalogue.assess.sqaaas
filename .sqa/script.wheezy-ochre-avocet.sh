@@ -4,6 +4,6 @@
 # SPDX-License-Identifier: GPL-3.0-only
 
 (
-cd github.com/madgeek-arc/resource-catalogue &&
+cd github.com/madgeek-arc/resource-catalogue-docs &&
     git rev-parse --is-inside-work-tree 
 )
