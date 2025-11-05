@@ -18,46 +18,46 @@ sqa_criteria:
     repos:
       github.com/madgeek-arc/resource-catalogue git:
         commands:
-        - /usr/bin/env sh .sqa/script.homely-cardinal-frise.sh
-        container: qc.acc_dorky-cornflower-eagle
+        - /usr/bin/env sh .sqa/script.flabby-myrtle-cattle.sh
+        container: qc.acc_wheezy-bronze-hyrax
   QC.Doc:
     repos:
       github.com/madgeek-arc/resource-catalogue-docs find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.snazzy-razzmatazz-jackal.sh
-        container: qc.doc_gloppy-corn-dragonfly
+        - /usr/bin/env sh .sqa/script.chummy-wheat-saola.sh
+        container: qc.doc_gamy-teal-beagle
       github.com/madgeek-arc/resource-catalogue-docs git:
         commands:
-        - /usr/bin/env sh .sqa/script.wheezy-ochre-avocet.sh
-        container: qc.doc_lousy-heliotrope-heron
+        - /usr/bin/env sh .sqa/script.sleepy-crimson-penguin.sh
+        container: qc.doc_nippy-tan-jaguar
       github.com/madgeek-arc/resource-catalogue-docs markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.thirsty-peach-bee.sh
-        container: qc.doc_gamy-tomato-wolverine
+        - /usr/bin/env sh .sqa/script.shaky-lime-paradise.sh
+        container: qc.doc_bluesy-charcoal-bracke
   QC.Lic:
     repos:
       github.com/madgeek-arc/resource-catalogue licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.greasy-blue-bird.sh
-        container: qc.lic_lanky-brass-abyssinian
+        - /usr/bin/env sh .sqa/script.baggy-eggplant-greyhound.sh
+        container: qc.lic_flabby-chocolate-camel
   QC.Sty:
     repos:
       github.com/madgeek-arc/resource-catalogue checkstyle:
         commands:
-        - /usr/bin/env sh .sqa/script.fuzzy-persimmon-chinook.sh
-        container: qc.sty_baggy-russet-tapir
+        - /usr/bin/env sh .sqa/script.frumpy-bronze-foxhound.sh
+        container: qc.sty_snoopy-aquamarine-dingo
       github.com/madgeek-arc/resource-catalogue hadolint:
         commands:
-        - /usr/bin/env sh .sqa/script.trippy-wheat-chicken.sh
-        container: qc.sty_seedy-viridian-lionfish
+        - /usr/bin/env sh .sqa/script.cranky-pumpkin-dachsbracke.sh
+        container: qc.sty_hazy-olivine-shark
       github.com/madgeek-arc/resource-catalogue jsonlint:
         commands:
-        - /usr/bin/env sh .sqa/script.bumpy-mustard-argentino.sh
-        container: qc.sty_dorky-fuchsia-catfish
+        - /usr/bin/env sh .sqa/script.lumpy-cyan-ocelot.sh
+        container: qc.sty_flimsy-brown-akbash
   QC.Ver:
     repos:
       github.com/madgeek-arc/resource-catalogue get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.breezy-taupe-tarsier.sh
-        container: qc.ver_homely-peach-wombat
+        - /usr/bin/env sh .sqa/script.baggy-razzmatazz-barracuda.sh
+        container: qc.ver_frumpy-emerald-terrier
 timeout: 5400
