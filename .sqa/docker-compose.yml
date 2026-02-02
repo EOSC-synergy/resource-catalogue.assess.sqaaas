@@ -1,5 +1,5 @@
 services:
-  qc.acc_goopy-charcoal-zorse:
+  qc.acc_chewy-carmine-maltese:
     command: sleep 6000000
     image: bitnami/git:2.34.1
     volumes:
@@ -7,7 +7,7 @@ services:
       target: /sqaaas-build
       type: bind
     working_dir: /sqaaas-build
-  qc.doc_beady-wisteria-wildebeest:
+  qc.doc_breezy-teal-jellyfish:
     build:
       context: ./github.com/EOSC-synergy/sqaaas-tooling/QC.Doc
       dockerfile: Dockerfile
@@ -17,15 +17,7 @@ services:
       target: /sqaaas-build
       type: bind
     working_dir: /sqaaas-build
-  qc.doc_flimsy-khaki-caterpillar:
-    command: sleep 6000000
-    image: bitnami/git:2.34.1
-    volumes:
-    - source: ./
-      target: /sqaaas-build
-      type: bind
-    working_dir: /sqaaas-build
-  qc.doc_stealthy-tangerine-crane:
+  qc.doc_randy-cinnabar-macaque:
     build:
       context: ./github.com/EOSC-synergy/sqaaas-tooling/QC.Doc/markdownlint
       dockerfile: Dockerfile
@@ -35,7 +27,15 @@ services:
       target: /sqaaas-build
       type: bind
     working_dir: /sqaaas-build
-  qc.lic_nippy-lavender-octopus:
+  qc.doc_sleepy-lemon-zorse:
+    command: sleep 6000000
+    image: bitnami/git:2.34.1
+    volumes:
+    - source: ./
+      target: /sqaaas-build
+      type: bind
+    working_dir: /sqaaas-build
+  qc.lic_freaky-periwinkle-mist:
     command: sleep 6000000
     image: eoscsynergy/sqaaas-licensee:9.17.0
     volumes:
@@ -43,7 +43,7 @@ services:
       target: /sqaaas-build
       type: bind
     working_dir: /sqaaas-build
-  qc.sty_hasty-ochre-wasp:
+  qc.sty_crabby-linen-fox:
     build:
       context: ./github.com/EOSC-synergy/sqaaas-tooling/QC.Sty/jsonlint
       dockerfile: Dockerfile
@@ -53,15 +53,7 @@ services:
       target: /sqaaas-build
       type: bind
     working_dir: /sqaaas-build
-  qc.sty_silly-blue-clam:
-    command: sleep 6000000
-    image: maven
-    volumes:
-    - source: ./
-      target: /sqaaas-build
-      type: bind
-    working_dir: /sqaaas-build
-  qc.sty_snoopy-eggplant-wildebeest:
+  qc.sty_smelly-razzmatazz-fox:
     command: sleep 6000000
     image: hadolint/hadolint:2.8.0-alpine
     volumes:
@@ -69,7 +61,15 @@ services:
       target: /sqaaas-build
       type: bind
     working_dir: /sqaaas-build
-  qc.ver_flimsy-platinum-tang:
+  qc.sty_zippy-cerise-hare:
+    command: sleep 6000000
+    image: maven
+    volumes:
+    - source: ./
+      target: /sqaaas-build
+      type: bind
+    working_dir: /sqaaas-build
+  qc.ver_flimsy-seashell-mist:
     build:
       context: ./github.com/EOSC-synergy/sqaaas-tooling/QC.Ver
       dockerfile: Dockerfile
