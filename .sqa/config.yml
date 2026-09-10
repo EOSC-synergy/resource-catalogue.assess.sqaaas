@@ -2,7 +2,7 @@ config:
   credentials: []
   project_repos:
     github.com/EOSC-synergy/sqaaas-tooling:
-      branch: feature/pynblint_fix
+      branch: fix/updatego
       repo: https://github.com/EOSC-synergy/sqaaas-tooling
     github.com/madgeek-arc/resource-catalogue:
       branch: master
@@ -15,46 +15,46 @@ sqa_criteria:
     repos:
       github.com/madgeek-arc/resource-catalogue git:
         commands:
-        - /usr/bin/env sh .sqa/script.muggy-green-spoonbill.sh
-        container: qc.acc_slaphappy-aqua-uakari
+        - /usr/bin/env sh .sqa/script.thistle_protective_ibex.sh
+        container: qc.acc_tundra_dizzy_alligator
   QC.Doc:
     repos:
       github.com/madgeek-arc/resource-catalogue find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.crappy-cerise-cuscus.sh
-        container: qc.doc_bluesy-amethyst-collie
+        - /usr/bin/env sh .sqa/script.claret_methodical_kookaburra.sh
+        container: qc.doc_coffee_candid_roadrunner
       github.com/madgeek-arc/resource-catalogue git:
         commands:
-        - /usr/bin/env sh .sqa/script.hasty-silver-terrier.sh
-        container: qc.doc_freaky-tangerine-quail
+        - /usr/bin/env sh .sqa/script.white_flexible_emu.sh
+        container: qc.doc_iris_balanced_jaguar
       github.com/madgeek-arc/resource-catalogue markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.snazzy-gamboge-monster.sh
-        container: qc.doc_gamy-zucchini-donkey
+        - /usr/bin/env sh .sqa/script.magenta_optimistic_elephant.sh
+        container: qc.doc_aquamarine_tranquil_lemur
   QC.Lic:
     repos:
       github.com/madgeek-arc/resource-catalogue licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.tasty-cinnabar-jackal.sh
-        container: qc.lic_hazy-cinnabar-chow
+        - /usr/bin/env sh .sqa/script.ultramarine_rustic_axolotl.sh
+        container: qc.lic_lemon_cranky_cockatoo
   QC.Sty:
     repos:
       github.com/madgeek-arc/resource-catalogue checkstyle:
         commands:
-        - /usr/bin/env sh .sqa/script.crabby-black-hyena.sh
-        container: qc.sty_grumpy-scarlet-kakapo
+        - /usr/bin/env sh .sqa/script.glacier_stoic_kraken.sh
+        container: qc.sty_fern_friendly_hyena
       github.com/madgeek-arc/resource-catalogue hadolint:
         commands:
-        - /usr/bin/env sh .sqa/script.wimpy-heliotrope-rabbit.sh
-        container: qc.sty_leaky-sangria-caiman
+        - /usr/bin/env sh .sqa/script.onyx_clever_capybara.sh
+        container: qc.sty_plum_forgiving_gecko
       github.com/madgeek-arc/resource-catalogue jsonlint:
         commands:
-        - /usr/bin/env sh .sqa/script.flaky-chartreuse-dunker.sh
-        container: qc.sty_slimy-tangerine-walrus
+        - /usr/bin/env sh .sqa/script.pine_sociable_porcupine.sh
+        container: qc.sty_obsidian_empathetic_orca
   QC.Ver:
     repos:
       github.com/madgeek-arc/resource-catalogue get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.freaky-amethyst-ocelot.sh
-        container: qc.ver_blurry-eggplant-gibbon
+        - /usr/bin/env sh .sqa/script.cyan_calm_penguin.sh
+        container: qc.ver_amaranth_reserved_penguin
 timeout: 5400
