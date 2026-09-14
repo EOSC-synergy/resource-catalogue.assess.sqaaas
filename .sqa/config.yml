@@ -15,46 +15,46 @@ sqa_criteria:
     repos:
       github.com/madgeek-arc/resource-catalogue git:
         commands:
-        - /usr/bin/env sh .sqa/script.pine_insightful_antelope.sh
-        container: qc.acc_cayenne_grateful_ferret
+        - /usr/bin/env sh .sqa/script.tide_serene_elephant.sh
+        container: qc.acc_flint_gracious_crow
   QC.Doc:
     repos:
       github.com/madgeek-arc/resource-catalogue find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.beige_wise_manta.sh
-        container: qc.doc_storm_hopeful_kingfisher
+        - /usr/bin/env sh .sqa/script.cosmos_serene_lynx.sh
+        container: qc.doc_ivory_brilliant_quoll
       github.com/madgeek-arc/resource-catalogue git:
         commands:
-        - /usr/bin/env sh .sqa/script.white_productive_ferret.sh
-        container: qc.doc_thistle_devoted_crocodile
+        - /usr/bin/env sh .sqa/script.butter_proud_caiman.sh
+        container: qc.doc_pumpkin_friendly_goat
       github.com/madgeek-arc/resource-catalogue markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.moss_smart_ibex.sh
-        container: qc.doc_caramel_realistic_skunk
+        - /usr/bin/env sh .sqa/script.taupe_vigilant_leopard.sh
+        container: qc.doc_turquoise_nurturing_ocelot
   QC.Lic:
     repos:
       github.com/madgeek-arc/resource-catalogue licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.gold_polite_quail.sh
-        container: qc.lic_claret_audacious_hawk
+        - /usr/bin/env sh .sqa/script.walnut_nervous_goat.sh
+        container: qc.lic_banana_grumpy_elk
   QC.Sty:
     repos:
       github.com/madgeek-arc/resource-catalogue checkstyle:
         commands:
-        - /usr/bin/env sh .sqa/script.teal_mindful_hawk.sh
-        container: qc.sty_chocolate_mature_stork
+        - /usr/bin/env sh .sqa/script.alabaster_mischievous_kraken.sh
+        container: qc.sty_steel_spirited_pegasus
       github.com/madgeek-arc/resource-catalogue hadolint:
         commands:
-        - /usr/bin/env sh .sqa/script.viridian_enigmatic_cassowary.sh
-        container: qc.sty_yellow_amused_elephant
+        - /usr/bin/env sh .sqa/script.dusk_visionary_gazelle.sh
+        container: qc.sty_harlequin_shy_hedgehog
       github.com/madgeek-arc/resource-catalogue jsonlint:
         commands:
-        - /usr/bin/env sh .sqa/script.ultramarine_hardworking_dragon.sh
-        container: qc.sty_coral_reserved_orca
+        - /usr/bin/env sh .sqa/script.pumpkin_cranky_kiwi.sh
+        container: qc.sty_raven_stubborn_beaver
   QC.Ver:
     repos:
       github.com/madgeek-arc/resource-catalogue get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.chartreuse_resilient_viper.sh
-        container: qc.ver_goldenrod_skeptical_cheetah
+        - /usr/bin/env sh .sqa/script.daffodil_supportive_hedgehog.sh
+        container: qc.ver_sage_reflective_crane
 timeout: 5400
