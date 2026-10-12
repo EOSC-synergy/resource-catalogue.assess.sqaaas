@@ -2,59 +2,59 @@ config:
   credentials: []
   project_repos:
     github.com/EOSC-synergy/sqaaas-tooling:
-      branch: release/1.7.7
+      branch: fix/updatego
       repo: https://github.com/EOSC-synergy/sqaaas-tooling
-    github.com/madgeek-arc/resource-catalogue:
-      branch: master
-      repo: https://github.com/madgeek-arc/resource-catalogue
+    github.com/cessda/resource-catalogue:
+      branch: cessda
+      repo: https://github.com/cessda/resource-catalogue
 environment:
   JPL_DOCKERFORCEBUILD: enabled
   JPL_KEEPGOING: enabled
 sqa_criteria:
   QC.Acc:
     repos:
-      github.com/madgeek-arc/resource-catalogue git:
+      github.com/cessda/resource-catalogue git:
         commands:
-        - /usr/bin/env sh .sqa/script.snappy-aqua-baboon.sh
-        container: qc.acc_stealthy-lavender-beetle
+        - /usr/bin/env sh .sqa/script.byzantium_apathetic_cormorant.sh
+        container: qc.acc_viridian_mindful_pegasus
   QC.Doc:
     repos:
-      github.com/madgeek-arc/resource-catalogue find_doc_files.py:
+      github.com/cessda/resource-catalogue find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.foggy-goldenrod-bee.sh
-        container: qc.doc_pasty-pink-wildebeest
-      github.com/madgeek-arc/resource-catalogue git:
+        - /usr/bin/env sh .sqa/script.bronze_apprehensive_antelope.sh
+        container: qc.doc_gold_imaginative_lemur
+      github.com/cessda/resource-catalogue git:
         commands:
-        - /usr/bin/env sh .sqa/script.slaphappy-bistre-malamute.sh
-        container: qc.doc_craggy-rust-avocet
-      github.com/madgeek-arc/resource-catalogue markdownlint:
+        - /usr/bin/env sh .sqa/script.cinnabar_sweet_crow.sh
+        container: qc.doc_sepia_sweet_seahorse
+      github.com/cessda/resource-catalogue markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.silly-crimson-bat.sh
-        container: qc.doc_beady-zucchini-hippopotamus
+        - /usr/bin/env sh .sqa/script.fandango_artistic_armadillo.sh
+        container: qc.doc_scarlet_bubbly_fox
   QC.Lic:
     repos:
-      github.com/madgeek-arc/resource-catalogue licensee:
+      github.com/cessda/resource-catalogue licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.leaky-lemon-labradoodle.sh
-        container: qc.lic_craggy-fuchsia-shark
+        - /usr/bin/env sh .sqa/script.slate_artistic_porcupine.sh
+        container: qc.lic_papaya_sociable_nymph
   QC.Sty:
     repos:
-      github.com/madgeek-arc/resource-catalogue checkstyle:
+      github.com/cessda/resource-catalogue checkstyle:
         commands:
-        - /usr/bin/env sh .sqa/script.boozy-tangerine-zebu.sh
-        container: qc.sty_flaky-teal-shrew
-      github.com/madgeek-arc/resource-catalogue hadolint:
+        - /usr/bin/env sh .sqa/script.watermelon_insightful_dingo.sh
+        container: qc.sty_tan_dreamy_donkey
+      github.com/cessda/resource-catalogue hadolint:
         commands:
-        - /usr/bin/env sh .sqa/script.gamy-sangria-devil.sh
-        container: qc.sty_scanty-ultramarine-dogfish
-      github.com/madgeek-arc/resource-catalogue jsonlint:
+        - /usr/bin/env sh .sqa/script.seafoam_perceptive_gorilla.sh
+        container: qc.sty_prussian_motivated_llama
+      github.com/cessda/resource-catalogue jsonlint:
         commands:
-        - /usr/bin/env sh .sqa/script.shabby-cream-spaniel.sh
-        container: qc.sty_cranky-cyan-macaque
+        - /usr/bin/env sh .sqa/script.purple_radiant_serval.sh
+        container: qc.sty_denim_attentive_roadrunner
   QC.Ver:
     repos:
-      github.com/madgeek-arc/resource-catalogue get_git_tags.py:
+      github.com/cessda/resource-catalogue get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.scaly-purple-dachsbracke.sh
-        container: qc.ver_homey-magnolia-swan
-timeout: 1800
+        - /usr/bin/env sh .sqa/script.clementine_smart_heron.sh
+        container: qc.ver_gold_wondrous_bison
+timeout: 5400
